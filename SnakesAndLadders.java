@@ -167,12 +167,7 @@ class Game extends JFrame implements ActionListener {
                 }
 
                 graphics2D.setPaint(Color.red);
-                int xPosition = player1.xPosition;
-                int yPosition = player1.yPosition;
                 checkPosition(player1);
-
-                boolean decreaseX = xPosition > player1.xPosition;
-                boolean decreaseY = yPosition > player1.yPosition;
                 graphics2D.fillOval(player1.xPosition, player1.yPosition, 20, 20);
 
                 if (player2.entry == 1) {
